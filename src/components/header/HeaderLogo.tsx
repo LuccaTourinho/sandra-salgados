@@ -16,8 +16,8 @@ const HeaderLogo = () => {
           />
         </Link>
         <div className="flex flex-col items-start justify-center gap-1">
-            <p className="shadow-sm uppercase text-xs sm:text-md lg:text-lg">sandra salgados</p>
-            <p className="shadow-sm uppercase text-xs sm:text-md lg:text-lg">o sabor da tradição,<br/>feito com o carinho de vó</p>
+            <p className="uppercase text-xs sm:text-md lg:text-lg">sandra salgados</p>
+            <p className="uppercase text-xs sm:text-md lg:text-lg">o sabor da tradição,<br/>feito com o carinho de vó</p>
         </div>
     </div>
   )

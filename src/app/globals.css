@@ -128,6 +128,12 @@
     
   }
 
+  @layer utilities {
+    .shadow-line {
+      box-shadow: 2px 4px 0 rgba(0, 0, 0, 0.5); /* Ajuste os valores para controlar a espessura e opacidade da linha de sombra */
+    }
+  }
+
   body{
     @apply bg-background-50 text-text-950;
   }
