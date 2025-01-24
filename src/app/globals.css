@@ -63,7 +63,7 @@
     --accent-800: 105 100% 20%;
     --accent-900: 105 100% 10%;
     --accent-950: 106 100% 5%;
-    
+    --box-shadow-light: 2px 4px 0 hsl(50, 23%, 5%);
   }
   .dark {
     --text-50: 50 23% 5%;
@@ -125,12 +125,16 @@
     --accent-800: 105 100% 80%;
     --accent-900: 105 100% 90%;
     --accent-950: 104 100% 95%;
-    
+    --box-shadow-dark: 2px 4px 0 hsl(50, 23%, 95%);
   }
 
   @layer utilities {
     .shadow-line {
-      box-shadow: 2px 4px 0 rgba(0, 0, 0, 0.5); /* Ajuste os valores para controlar a espessura e opacidade da linha de sombra */
+      box-shadow: var(--box-shadow-light);
+    }
+  
+    .dark .shadow-line {
+      box-shadow: var(--box-shadow-dark);
     }
   }
 

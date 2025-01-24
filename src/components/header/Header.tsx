@@ -12,7 +12,9 @@ const Header = () => {
         <div className="flex items-center justify-between flex-row">
           <HeaderLogo/> 
           <HeaderNav />
-          <HeaderAccountOptions />
+          <div className="hidden xl:block">
+            <HeaderAccountOptions />
+          </div>
         </div>
       </Suspense>
     </header>
