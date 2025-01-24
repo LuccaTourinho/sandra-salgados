@@ -5,7 +5,7 @@ export default {
   content: [
     "./src/**/*.{js,ts,jsx,tsx,mdx}",
   ],
-  darkMode: "class",
+  darkMode: ["class"],
   theme: {
     extend: {
       container: {
@@ -52,6 +52,7 @@ export default {
         'home-img': "url('/imgs/home-image.jpg')",
         'load-img': "url('/imgs/Loading-Emoji.png')",
         'salgados-img': "url('/imgs/Salgados.png')",
+        'logo-svg': "url('/imgs/logo-svg.svg')",
       },
       colors: {
         'text': {
