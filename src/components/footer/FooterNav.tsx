@@ -32,9 +32,9 @@ const Links: LinkProps[] = [
 
 const FooterNav = () => {
   return (
-    <div className='flex flex-col items-start justify-center gap-2 border-l-4 border-text-50 pl-4'>
+    <div className='flex flex-col items-start justify-center gap-2 border-l-4 border-text-50 pl-1 xl:pl-4'>
         {Links.map((link, index) => (
-            <Link key={index} href={link.href} className="text-lg text-text-50 hover:underline transition-all duration-300">{link.text}</Link>
+            <Link key={index} href={link.href} className="text-xs md:text-sm xl:text-lg text-text-50 hover:underline transition-all duration-300">{link.text}</Link>
         ))}
     </div>
   )

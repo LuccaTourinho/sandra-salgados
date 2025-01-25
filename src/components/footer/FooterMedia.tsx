@@ -23,7 +23,7 @@ const FooterMedia = () => {
                 rel="noopener noreferrer">
                 <div className="flex items-center justify-center p-1 bg-background-700 rounded-md">    
                     <FaInstagram 
-                        size={24} 
+                        size={18} 
                         strokeWidth={2} 
                         className="text-text-50 hover:text-accent-500 transition-all duration-300"/>
                 </div>
@@ -34,7 +34,7 @@ const FooterMedia = () => {
                 rel="noopener noreferrer">
                 <div className="flex items-center justify-center p-1 bg-background-700 rounded-md">    
                     <FaWhatsapp
-                        size={24} 
+                        size={18} 
                         strokeWidth={2} 
                         className="text-text-50 hover:text-accent-500 transition-all duration-300"/>
                 </div>
