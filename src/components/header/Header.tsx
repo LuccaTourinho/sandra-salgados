@@ -8,7 +8,7 @@ import HeaderMobile from "./HeaderMobile";
 
 const Header = () => {
   return (
-    <header className="fixed top-0 left-0 w-full z-40 py-2 xl:py-4 border-b-2 border-text-950">
+    <header className="w-full z-40 py-2 xl:py-4 border-b-2 border-text-950">
       <Suspense fallback={<div>Loading...</div>}>
         <div className="flex items-center justify-between flex-row">
           <HeaderLogo/> 
@@ -25,4 +25,4 @@ const Header = () => {
   )
 }
 
-export default Header
+export default Header;

@@ -4,6 +4,7 @@ import "./globals.css";
 import PageTrasition from "@/components/PageTrasition";
 import StairTrasition from "@/components/StairTrasition";
 import Header from "@/components/header/Header";
+import Footer from "@/components/footer/Footer";
 
 // Definição da fonte local Roboto
 const roboto = localFont({
@@ -47,6 +48,7 @@ export default function RootLayout({
         <PageTrasition>
           {children}
         </PageTrasition>
+        <Footer />
       </body>
     </html>
   );
