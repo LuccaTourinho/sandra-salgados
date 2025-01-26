@@ -47,7 +47,7 @@ const HeaderNav = () => {
           <Link 
             key={index} 
             href={link.href} 
-            className="hidden xl:block text-md text-text-950 font-semibold hover:underline transition-all duration-300 ease-in-out">
+            className="hidden xl:block text-md 2xl:text-2xl text-text-950 font-semibold hover:underline transition-all duration-300 ease-in-out">
             {link.text}
           </Link>
         ))
