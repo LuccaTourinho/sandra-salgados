@@ -13,7 +13,7 @@ const FooterMedia = () => {
             alt="Sandra Salgados Logo"
             width={100}
             height={100}
-            className="w-[60px] h-[60px] sm:w-[100px] sm:h-[100px] 2xl:w-[150px] 2xl:h-[150px] "
+            className="w-[80px] h-[80px] sm:w-[140px] sm:h-[140px] 2xl:w-[180px] 2xl:h-[180px] "
           /> 
         </Link>
         <div className="flex flex-row items-center justify-center gap-2">
@@ -23,7 +23,7 @@ const FooterMedia = () => {
                 rel="noopener noreferrer">
                 <div className="flex items-center justify-center p-1 bg-background-700 rounded-md">    
                     <FaInstagram 
-                        size={18} 
+                        size={25} 
                         strokeWidth={2} 
                         className="text-text-50 hover:text-accent-500 transition-all duration-300"/>
                 </div>
@@ -34,7 +34,7 @@ const FooterMedia = () => {
                 rel="noopener noreferrer">
                 <div className="flex items-center justify-center p-1 bg-background-700 rounded-md">    
                     <FaWhatsapp
-                        size={18} 
+                        size={25} 
                         strokeWidth={2} 
                         className="text-text-50 hover:text-accent-500 transition-all duration-300"/>
                 </div>
