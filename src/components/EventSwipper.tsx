@@ -49,7 +49,7 @@ const EventSwipper = () => {
                 <div className="bg-primary-500 rounded-lg p-1 md:p-3 hover:bg-primary-600 hover:cursor-pointer transition-all duration-300" onClick={handlePrev}>
                     <ArrowLeft size={22} strokeWidth={3}/>
                 </div>
-                <div className="relative w-[200px] h-[200px] sm:w-[300px] sm:h-[300px] md:w-[500px] md:h-[500px] xl:w-[800px] xl:h-[600px] 2xl:w-[1000px] 2xl:h-[600px] overflow-hidden border-1 border-text-950 rounded-lg">
+                <div className="relative w-[200px] h-[200px] sm:w-[300px] sm:h-[300px] md:w-[500px] md:h-[400px] xl:w-[800px]  2xl:w-[1000px] overflow-hidden border-1 border-text-950 rounded-lg">
                     <div className="absolute inset-0 flex items-center justify-center">
                         {
                             events.map((event, index) => {
