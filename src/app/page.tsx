@@ -16,7 +16,7 @@ export default function Home() {
           da nossa cozinha para o seu evento<br/>
             <span className="text-accent-600">qualidade</span> que o cliente <span className="text-accent-600">merece</span>
         </h1>
-        <div className={`flex flex-col items-center justify-around gap-2 xl:gap-14`}>
+        <div className={`flex flex-col items-center justify-around gap-2 xl:gap-3`}>
           <MessageDisplay />
           <HeroCarroseul />
         </div>
