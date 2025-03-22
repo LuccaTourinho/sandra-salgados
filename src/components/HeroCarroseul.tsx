@@ -43,48 +43,50 @@ const HeroCarroseul = () => {
     return (
       <div className="flex flex-col items-center py-8 gap-8">
           <div className="flex flex-row items-center justify-around gap-8">
-              <div 
-                  className="bg-primary-500 rounded-lg p-1 md:p-3 hover:bg-primary-600 hover:cursor-pointer transition-all duration-300" 
-                  onClick={handlePrev}
-              >
-                  <ArrowLeft size={22} strokeWidth={3} />
-              </div>
-              <div className="relative w-[100px] h-[100px] sm:w-[150px] sm:h-[150px] md:w-[250px] md:h-[250px] xl:w-[400px] xl:h-[400px] overflow-hidden border-1 border-text-950 rounded-lg">
-                  <div className="absolute inset-0 flex items-center justify-center">
-                      {carouselItems.map((item, index) => {
-                          const position = 
-                              index < activeIndex
-                                  ? '-translate-x-full'
-                                  : index > activeIndex
-                                  ? 'translate-x-full'
-                                  : 'translate-x-0';
+            <div className="relative w-[200px] h-[150px] sm:w-[250px] sm:h-[200px] md:w-[400px] md:h-[400px] overflow-hidden border-1 border-text-950 rounded-lg">
+                <div className="absolute inset-0 flex items-center justify-center">
+                    {carouselItems.map((item, index) => {
+                        const position = 
+                            index < activeIndex
+                                ? '-translate-x-full'
+                                : index > activeIndex
+                                ? 'translate-x-full'
+                                : 'translate-x-0';
 
-                          return (
-                              <div 
-                                  key={index} 
-                                  className={`absolute w-full h-full transition-transform duration-500 ease-in-out ${position}`}
-                              >
-                                  <Image
-                                      src={item.src}
-                                      alt={item.alt}
-                                      layout="fill"
-                                      objectFit="cover"
-                                      className="rounded-lg"
-                                  />
-                                  <p className="absolute bottom-2 right-4 bg-background-950 text-text-50 rounded-lg p-2 text-xs sm:text-sm md:text-md lg:text-lg xl:text-2xl font-extrabold">
-                                      {item.title}
-                                  </p>
-                              </div>
-                          );
-                      })}
-                  </div>
-              </div>
-              <div 
-                  className="bg-primary-500 rounded-lg p-1 md:p-3 hover:bg-primary-600 hover:cursor-pointer transition-all duration-300" 
-                  onClick={handleNext}
-              >
-                  <ArrowRight size={22} strokeWidth={3} />
-              </div>
+                        return (
+                            <div 
+                                key={index} 
+                                className={`absolute w-full h-full transition-transform duration-500 ease-in-out ${position}`}
+                            >
+                                <Image
+                                    src={item.src}
+                                    alt={item.alt}
+                                    layout="fill"
+                                    objectFit="cover"
+                                    className="rounded-lg"
+                                />
+                                <p className="absolute bottom-2 right-4 bg-background-950 text-text-50 rounded-lg p-2 text-xs sm:text-sm md:text-md lg:text-lg xl:text-2xl font-extrabold">
+                                    {item.title}
+                                </p>
+                            </div>
+                        );
+                    })}
+                </div>
+            </div>       
+          </div>
+          <div className="flex items-center justify-center">
+            <div 
+                className="bg-primary-500 p-1 md:p-3 hover:bg-primary-600 hover:cursor-pointer transition-all duration-300" 
+                onClick={handlePrev}
+            >
+                <ArrowLeft size={22} strokeWidth={3} />
+            </div>
+            <div 
+                className="bg-primary-500 p-1 md:p-3 hover:bg-primary-600 hover:cursor-pointer transition-all duration-300" 
+                onClick={handleNext}
+            >
+                <ArrowRight size={22} strokeWidth={3} />
+            </div>
           </div>
       </div>
   );

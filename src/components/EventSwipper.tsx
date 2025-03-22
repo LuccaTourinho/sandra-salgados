@@ -46,10 +46,7 @@ const EventSwipper = () => {
     return (
         <div className="flex flex-col items-center py-8 gap-8">
             <div className="flex flex-row items-center justify-around gap-8">
-                <div className="bg-primary-500 rounded-lg p-1 md:p-3 hover:bg-primary-600 hover:cursor-pointer transition-all duration-300" onClick={handlePrev}>
-                    <ArrowLeft size={22} strokeWidth={3}/>
-                </div>
-                <div className="relative w-[200px] h-[200px] sm:w-[300px] sm:h-[300px] md:w-[500px] md:h-[400px] xl:w-[800px]  2xl:w-[1000px] overflow-hidden border-1 border-text-950 rounded-lg">
+                <div className="relative w-[300px] h-[200px] sm:w-[400px] sm:h-[300px] md:w-[600px] md:h-[400px] xl:w-[900px]  2xl:w-[1100px] overflow-hidden border-1 border-text-950 rounded-lg">
                     <div className="absolute inset-0 flex items-center justify-center">
                         {
                             events.map((event, index) => {
@@ -81,7 +78,12 @@ const EventSwipper = () => {
                         }
                     </div>
                 </div>
-                <div className="bg-primary-500 rounded-lg p-1 md:p-3 hover:bg-primary-600 hover:cursor-pointer transition-all duration-300" onClick={handleNext}>
+            </div>
+            <div className="flex items-center justify-center">
+                <div className="bg-primary-500 p-1 md:p-3 hover:bg-primary-600 hover:cursor-pointer transition-all duration-300" onClick={handlePrev}>
+                    <ArrowLeft size={22} strokeWidth={3}/>
+                </div>
+                <div className="bg-primary-500 p-1 md:p-3 hover:bg-primary-600 hover:cursor-pointer transition-all duration-300" onClick={handleNext}>
                     <ArrowRight size={22} strokeWidth={3}/>
                 </div>
             </div>
