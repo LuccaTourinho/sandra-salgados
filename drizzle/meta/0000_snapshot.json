@@ -1,0 +1,84 @@
+{
+  "id": "db7757db-248b-4a54-bdf0-deffead67eed",
+  "prevId": "00000000-0000-0000-0000-000000000000",
+  "version": "7",
+  "dialect": "postgresql",
+  "tables": {
+    "public.produtos": {
+      "name": "produtos",
+      "schema": "",
+      "columns": {
+        "id": {
+          "name": "id",
+          "type": "serial",
+          "primaryKey": true,
+          "notNull": true
+        },
+        "tp_produto": {
+          "name": "tp_produto",
+          "type": "varchar(20)",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "nm_produto": {
+          "name": "nm_produto",
+          "type": "varchar(80)",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "vl_produto": {
+          "name": "vl_produto",
+          "type": "numeric(10, 2)",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "ds_produto": {
+          "name": "ds_produto",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true
+        }
+      },
+      "indexes": {},
+      "foreignKeys": {},
+      "compositePrimaryKeys": {},
+      "uniqueConstraints": {
+        "produtos_tp_produto_unique": {
+          "name": "produtos_tp_produto_unique",
+          "nullsNotDistinct": false,
+          "columns": [
+            "tp_produto"
+          ]
+        },
+        "produtos_nm_produto_unique": {
+          "name": "produtos_nm_produto_unique",
+          "nullsNotDistinct": false,
+          "columns": [
+            "nm_produto"
+          ]
+        },
+        "produtos_ds_produto_unique": {
+          "name": "produtos_ds_produto_unique",
+          "nullsNotDistinct": false,
+          "columns": [
+            "ds_produto"
+          ]
+        }
+      },
+      "policies": {},
+      "checkConstraints": {},
+      "isRLSEnabled": false
+    }
+  },
+  "enums": {},
+  "schemas": {},
+  "sequences": {},
+  "roles": {},
+  "policies": {},
+  "views": {},
+  "_meta": {
+    "columns": {},
+    "schemas": {},
+    "tables": {}
+  }
+}
