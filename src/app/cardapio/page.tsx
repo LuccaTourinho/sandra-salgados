@@ -1,8 +1,26 @@
 'use client';
 
 import {motion} from 'framer-motion';
+import { useEffect } from 'react';
 
 const page = () => {
+  useEffect(() => {
+    async function fetchProdutos(){
+      try{
+        const response = await fetch('/api/produtos');
+        if(!response.ok){
+          throw new Error('Erro ao buscar os produtos');
+        }
+        const produtos = await response.json();
+        console.log("Produtos: ", produtos);
+      }catch(error){
+        console.error('Erro ao buscar os produtos: ', error);
+      }
+    }
+
+    fetchProdutos();
+  }, []);
+
   return (
     <motion.section
         initial={{ opacity: 0 }}
